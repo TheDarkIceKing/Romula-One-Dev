@@ -18,14 +18,11 @@ module.exports.run = async (bot, message, args) => {
     var teamlist = JSON.parse(teamsfile)
     var thisguild = bot.guilds.cache.get("874777016241639444")
     var cachevariable = JSON.parse(await fs.readFileSync('./functions/cache/emptyteammembercache.json', "utf8"))
-    // console.log(cachevariable)
     for (var team in cachevariable.teams) {
         var role = thisguild.roles.cache.get(teamlist.teams[team].teamrole)
-        // console.log(role)
 
         role.members.forEach(Player => {
             sleep(150)
-            // console.log(Player.nickname)
             if (Player.roles.cache.has(teamlist.other.teambossrole)) {
                 cachevariable.teams[team].staff.teamboss = `${ Player.nickname || Player.user.username}`
             }
@@ -53,7 +50,6 @@ module.exports.run = async (bot, message, args) => {
                     cachevariable.teams[team].staff.engineer1 = `${ Player.nickname || Player.user.username}`
                 }
             }
-            // console.log(JSON.parse(cachevariable))
         })
 
         cachevariable.teams[team].extra.color = teamlist.teams[team].teamcolor

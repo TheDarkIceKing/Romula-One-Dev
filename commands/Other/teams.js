@@ -49,7 +49,6 @@ module.exports.run = async(bot, message, args) => {
             value: "none"
         }])
         var role = message.guild.roles.cache.get(teamlist.teams[team].teamrole)
-        console.log(team)
         role.members.forEach(Player => {
             sleep(100)
             if(Player.roles.cache.has(teamlist.other.teambossrole)){
@@ -80,7 +79,6 @@ module.exports.run = async(bot, message, args) => {
             }
         });
         await sleep(1000)
-        // console.log(message.guild.roles.cache.get(eval(`teamlist.teams[team].teamrole`)).members)
         message.channel.send({
             embeds: [embed]
         })
