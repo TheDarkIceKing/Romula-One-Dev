@@ -1,0 +1,69 @@
+body {
+    font-family: "Baloo Da";
+    background-color: #1a1b1c;
+    color: whitesmoke;
+    margin-left: 260px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #151617;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    /* padding-top: 60px; */
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .topbar {
+    background-color: #151617;
+    left: 0;
+    margin-left: 250px !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    max-width: 87%;
+  }
+  .topbar a {
+    padding: 8px 8px 8px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    float: right;
+    /* margin-right: 250px; */
+  }
+  
+  .navOpen {
+    width: 70%;
+    margin-left: 15%;
+    transition: 0.1s;
+    height: 35px;
+    margin-top: 25px;
+    background-color: #242426;
+    border-width: 1px;
+    color: whitesmoke;
+  }
+.main{
+  margin-top: 50px;
+}
+.serverStatsTable{
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 25px;
+  font-size: large;
+  min-width: 50%;
+  text-align: center;
+}
