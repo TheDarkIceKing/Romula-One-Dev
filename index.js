@@ -16,7 +16,7 @@ const app = express();
 const port = 3000;
 
 
-bot.login(process.env.token);
+bot.login(process.env.TOKEN);
 
 bot.on('ready', async() => {
     console.log(bot.user.username + " Is online!")
