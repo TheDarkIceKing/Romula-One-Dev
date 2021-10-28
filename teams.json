@@ -1,0 +1,61 @@
+{
+    "teams": {
+        "mercedes": {
+            "teamcolor": "#00ffdd",
+            "teamrole": "874779045462687755",
+            "channel": "876659171452416040"
+        },
+        "redbull": {
+            "teamcolor": "#0a1b8e",
+            "teamrole": "874779304444198922",
+            "channel": "876661729352892446"
+        },
+        "ferrari": {
+            "teamcolor": "#ff0000",
+            "teamrole": "874779221552164874",
+            "channel": "876661776719159296"
+        },
+        "alpine": {
+            "teamcolor": "#0795f1",
+            "teamrole": "874779721538343012",
+            "channel": "876661904284717086"
+        },
+        "mclaren": {
+            "teamcolor": "#eca206",
+            "teamrole": "874779497151463474",
+            "channel": "876661904284717086"
+        },
+        "astonmartin": {
+            "teamcolor": "#065653",
+            "teamrole": "874779407024259074",
+            "channel": "878206883989712947"
+        },
+        "alphatauri": {
+            "teamcolor": "#f0f3ff",
+            "teamrole": "874779659882070107",
+            "channel": "876669589860274227"
+        },
+        "alfaromeo": {
+            "teamcolor": "#600505",
+            "teamrole": "874779800802295918",
+            "channel": "876669636664496139"
+        },
+        "haas": {
+            "teamcolor": "#000000",
+            "teamrole": "874779874794029056",
+            "channel": "876669686236991488"
+        },
+        "williams": {
+            "teamcolor": "#6eb6e5",
+            "teamrole": "874779939029778432",
+            "channel": "876669736430215168"
+        }
+    },
+    "other": {
+        "driverrole": "874778718076276806",
+        "reserverole": "876663199955558491",
+        "testdriverrole": "888864208723259512",
+        "teambossrole": "874778791552094209",
+        "engineerrole": "876667119109021766"
+    }
+}

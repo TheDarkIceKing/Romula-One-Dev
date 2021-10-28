@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Da' rel='stylesheet'>
+<link id="style" href="%DOMAIN%/style" rel="stylesheet" />
+
+<body>
+    %navbar%
+    %staffnav%
+    <div class="main">
+        <div class="serverLookup">
+            <input type="text" id="serverIP"></input>
+            <input type="submit" class="button" id="submitButtonLookupIp" value="Lookup server"></button>
+        </div>
+        <div id="serverStats" class="serverStats" style="visibility: hidden;">
+            <center><table class="serverStatsTable">
+                <caption>Server details for:</caption>
+                <caption id="tableCaption">%serverIP%</caption>
+                <tr>
+                    <th>Blacklisted</th>
+                    <th>ForcedUpdate</th>
+                </tr>
+                <tr>
+                    <td class="Toggle" id="BlacklistValue" style="color: lime" onclick="toggleBlacklist(`BlacklistValue`, document.getElementById(`BlacklistValue`).innerText)">false</td>
+                    <td class="Toggle" id="ForcedUpdateValue" style="color: lime">false</td>
+
+                </tr>
+                <tr>
+
+                </tr>
+            </table></center>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    input,
+    .btn {
+        background-color: #353535;
+        width: 70%;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        margin: 5px 0;
+        opacity: 0.85;
+        display: inline-block;
+        font-size: 17px;
+        line-height: 20px;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .serverLookup {
+        text-align: center;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+    .Toggle:hover{
+        cursor: pointer;
+    }
+</style>
+<script>
+
+    document.getElementById("submitButtonLookupIp").onclick = async function () {
+        var serverIP = document.getElementById("serverIP").value
+        if (serverIP == "") return alert("Please enter a server IP")
+        await fetch(`%DOMAIN%/enable/${serverIP}`).then(response => response.json())
+            .then(data => {
+                console.log(data)
+                document.getElementById("tableCaption").innerHTML = serverIP
+                document.getElementById("BlacklistValue").innerHTML = data.Blacklisted
+                if(data.Blacklisted == true) {document.getElementById("BlacklistValue").style.color = "RED"} else {document.getElementById("BlacklistValue").style.color = "lime"}
+                document.getElementById("ForcedUpdateValue").innerHTML = data.ForceUpdate
+                if(data.ForceUpdate == true) {document.getElementById("ForcedUpdateValue").style.color = "RED"} else {document.getElementById("ForcedUpdateValue").style.color = "lime"}
+                document.getElementById("serverStats").style.visibility = "visible"
+            });
+    }
+
+    async function toggleBlacklist(action, currentValue){
+        console.log(action)
+        console.log(currentValue)
+    }
+
+</script>

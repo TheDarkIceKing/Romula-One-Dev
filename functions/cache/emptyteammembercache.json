@@ -1,0 +1,154 @@
+{
+    "teams": {
+        "mercedes": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "redbull": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "ferrari": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "alpine": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "mclaren": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "astonmartin": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "alphatauri": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "alfaromeo": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "haas": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        },
+        "williams": {
+            "staff": {
+                "teamboss": "none",
+                "driver1": "none",
+                "driver2": "none",
+                "reserve1": "none",
+                "reserve2": "none",
+                "testdriver": "none",
+                "engineer1": "none",
+                "engineer2": "none"
+            },
+            "extra":{
+                "color": ""
+            }
+        }
+    }
+}
