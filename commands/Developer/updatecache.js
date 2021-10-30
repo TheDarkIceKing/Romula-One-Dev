@@ -26,6 +26,9 @@ module.exports.run = async (bot, message, args) => {
             if (Player.roles.cache.has(teamlist.other.teambossrole)) {
                 cachevariable.teams[team].staff.teamboss = `${ Player.nickname || Player.user.username}`
             }
+            if(Player.roles.cache.has(teamlist.other.teammanagerrole)){
+                cachevariable.teams[team].staff.teammanager = `${ Player.nickname || Player.user.username}`
+            }
             if (Player.roles.cache.has(teamlist.other.driverrole)) {
                 if (cachevariable.teams[team].staff.driver1 == "none") {
                     cachevariable.teams[team].staff.driver1 = `${ Player.nickname || Player.user.username}`

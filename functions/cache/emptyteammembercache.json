@@ -3,6 +3,7 @@
         "mercedes": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -18,6 +19,7 @@
         "redbull": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -33,6 +35,7 @@
         "ferrari": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -48,6 +51,7 @@
         "alpine": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -63,6 +67,7 @@
         "mclaren": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -78,6 +83,7 @@
         "astonmartin": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -93,6 +99,7 @@
         "alphatauri": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -108,6 +115,7 @@
         "alfaromeo": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -123,6 +131,7 @@
         "haas": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",
@@ -138,6 +147,7 @@
         "williams": {
             "staff": {
                 "teamboss": "none",
+                "teammanager": "none",
                 "driver1": "none",
                 "driver2": "none",
                 "reserve1": "none",

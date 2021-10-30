@@ -21,6 +21,10 @@ module.exports.run = async (bot, message, args) => {
                 value: "none"
             },
             {
+                name: `Teammanager`,
+                value: "none"
+            },
+            {
                 name: `Driver`,
                 value: "none"
             },
