@@ -18,6 +18,7 @@ const port = 3000;
 
 bot.login(process.env.TOKEN);
 
+
 bot.on('ready', async() => {
     console.log(bot.user.username + " Is online!")
 })
@@ -78,11 +79,14 @@ async function loadCommands(folder) {
         });
     })
 
-
-
-
-
 }
+
+module.exports = {
+    getbot: function() {
+       return bot
+    }
+}
+
 
 // WEBPAGES
 
@@ -91,6 +95,7 @@ const passport = require('passport')
 
 // WebPagina stuff
 const authRoute = require('./api/dashboard')
+const teamapi = require('./api/teams')
     // const techRoute = require('./api/tech')
 const homeRoute = require('./Website/RouterHandler')
 
@@ -122,6 +127,7 @@ app.use(passport.session())
 
 
 app.use('/dashboard', authRoute)
+app.use('/teamapi', teamapi)
 app.use('', homeRoute)
 
 const listener = app.listen(port, () => {
