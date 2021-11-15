@@ -55,7 +55,7 @@ module.exports.run = async (bot, message, args) => {
             }
         })
 
-        cachevariable.teams[team].extra.color = teamlist.teams[team].teamcolor
+        cachevariable.teams[team].extra.color = thisguild.roles.cache.get(teamlist.teams[team].teamrole).hexColor
     }
 
     fs.writeFile("./functions/cache/teammembercache.json", JSON.stringify(cachevariable, null, 2), (err) => {
