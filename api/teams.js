@@ -4,8 +4,11 @@ const router = require("express").Router();
 const fs = require("fs");
 var navbar = fs.readFileSync("./Website/includes/navbar.html", "utf8");
 
-router.get('/teaminfo', function (req, res){
-    readpage('./functions/cache/teammembercache.json', req, res)
+router.get('/teaminfo/:team?', function (req, res){
+    if(req.params["team"] == null) return readpage('./functions/cache/teammembercache.json', req, res)
+    var teamsfile = fs.readFileSync("./functions/cache/teammembercache.json", "utf8");
+    var teamlist = JSON.parse(teamsfile)
+    res.send(teamlist.teams[req.params["team"]])
 })
 
 
